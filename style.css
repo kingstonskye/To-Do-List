@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(to right, rgb(81, 142, 81), rgb(210, 227, 167));
+    color: white;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.nav h2{
+    font-size: 2rem;
+}
+
+.user-input{
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input{
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transition: all 0.30% ease-in-out;
+    -moz-transition: all 0.30% ease-in-out;
+    -ms-transition: all 0.30% ease-in-out;
+    -o-transition: all 0.30% ease-in-out;
+    transition: all 0.30% ease-in-out;
+}
+
+.user-input input:focus{
+    box-shadow: 0 0 5px rgb(81, 142, 81);
+    border: 1px solid rgb(81, 142, 81);
+}
+
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover{
+    color: transparent;
+    color: white;
+}
+
+.to-do-items{
+    width: 500px;
+    margin: auto;
+}
+
+.item{
+    font-weight:bold;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: rgb(44, 44, 44);
+    margin-top: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30% ease-in-out;
+    -moz-transition: all 0.30% ease-in-out;
+    -ms-transition: all 0.30% ease-in-out;
+    -o-transition: all 0.30% ease-in-out;
+    transition: all 0.30% ease-in-out;
+}
+
+.items:hover{
+    box-shadow: 0 0 20px rgb(81, 142, 81);
+    border: 1px solid rgb(81, 142, 81);
+}
+
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media(max-width:768px){
+    .nav{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav h2{
+        margin: 10px 0;
+    }
+
+    .user-input input{
+        width: 100%;
+    }
+
+    .to-do-items{
+        width: 100%;
+    }
+}
+
+@media(max-width:480px){
+    .user-input input{
+        width: 74%;
+    }
+}
+@media(max-width:320){
+    .user-input input{
+        width: 60%%;
+    }
+}
+
+h2 i{
+    display: flex;
+    font-size: 85%;
+    margin-right: 5px;
+    
+}
+
+::placeholder{
+    color: rgb(167, 164, 164);
+    font-size: 15px;
+}
